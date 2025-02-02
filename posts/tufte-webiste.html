@@ -310,37 +310,36 @@
 <section id="a-layouts-default-html">
 <h4>a. <strong><code class="docutils literal notranslate"><span class="pre">_layouts/default.html</span></code></strong><a class="headerlink" href="#a-layouts-default-html" title="Link to this heading">¶</a></h4>
 <p>This is the default layout for all pages. It includes a link to the Tufte CSS file (hosted locally in the <code class="docutils literal notranslate"><span class="pre">css</span></code> folder).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>htmlCopyEdit&lt;!-- _layouts/default.html --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;{{ page.title }} | {{ site.title }}&lt;/title&gt;
-  &lt;!-- Link to Tufte CSS --&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ &quot;/css/tufte.css&quot; | relative_url }}&quot;&gt;
-  &lt;!-- Optionally add your custom styling here --&gt;
-  &lt;style&gt;
-    /* Any custom styles may be added here */
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header&gt;
-    &lt;h1&gt;&lt;a href=&quot;{{ &quot;/&quot; | relative_url }}&quot;&gt;{{ site.title }}&lt;/a&gt;&lt;/h1&gt;
-    &lt;p&gt;{{ site.description }}&lt;/p&gt;
-    &lt;!-- Navigation menu can be added here if needed --&gt;
-  &lt;/header&gt;
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{ page.title }} | {{ site.title }}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="cm">&lt;!-- Link to Tufte CSS --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ &quot;</span><span class="err">/</span><span class="na">css</span><span class="err">/</span><span class="na">tufte</span><span class="err">.</span><span class="na">css</span><span class="err">&quot;</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}&quot;</span><span class="p">&gt;</span>
+  <span class="cm">&lt;!-- Optionally add your custom styling here --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="c">/* Any custom styles may be added here */</span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ &quot;</span><span class="err">/&quot;</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}&quot;</span><span class="p">&gt;</span>{{ site.title }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ site.description }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- Navigation menu can be added here if needed --&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
 
-  &lt;main&gt;
-    &lt;!-- The page content will be injected here --&gt;
+  <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- The page content will be injected here --&gt;</span>
     {{ content }}
-  &lt;/main&gt;
+  <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
 
-  &lt;footer&gt;
-    &lt;p&gt;&amp;copy; {{ site.time | date: &quot;%Y&quot; }} {{ site.title }}. All rights reserved.&lt;/p&gt;
-  &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> {{ site.time | date: &quot;%Y&quot; }} {{ site.title }}. All rights reserved.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p><em>Explanation:</em></p>
@@ -353,47 +352,46 @@
 <section id="b-layouts-post-html">
 <h4>b. <strong><code class="docutils literal notranslate"><span class="pre">_layouts/post.html</span></code></strong><a class="headerlink" href="#b-layouts-post-html" title="Link to this heading">¶</a></h4>
 <p>This layout is used for blog posts. It extends the default layout while adding elements specific to a post (like the post date).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>htmlCopyEdit&lt;!-- _layouts/post.html --&gt;
-{% raw %}{% comment %}
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>{% raw %}{% comment %}
 This layout wraps individual blog posts. It expects that each Markdown post has front matter with at least a title and a date.
 {% endcomment %}{% endraw %}
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;{{ page.title }} | {{ site.title }}&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ &quot;/css/tufte.css&quot; | relative_url }}&quot;&gt;
-  &lt;style&gt;
-    /* Custom styles for blog posts if necessary */
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header&gt;
-    &lt;h1&gt;&lt;a href=&quot;{{ &quot;/&quot; | relative_url }}&quot;&gt;{{ site.title }}&lt;/a&gt;&lt;/h1&gt;
-    &lt;p&gt;{{ site.description }}&lt;/p&gt;
-  &lt;/header&gt;
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{ page.title }} | {{ site.title }}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ &quot;</span><span class="err">/</span><span class="na">css</span><span class="err">/</span><span class="na">tufte</span><span class="err">.</span><span class="na">css</span><span class="err">&quot;</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="c">/* Custom styles for blog posts if necessary */</span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ &quot;</span><span class="err">/&quot;</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}&quot;</span><span class="p">&gt;</span>{{ site.title }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ site.description }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
 
-  &lt;main class=&quot;post-content&quot;&gt;
-    &lt;article&gt;
-      &lt;header&gt;
-        &lt;h2&gt;{{ page.title }}&lt;/h2&gt;
-        &lt;p class=&quot;post-date&quot;&gt;{{ page.date | date: &quot;%B %d, %Y&quot; }}&lt;/p&gt;
-      &lt;/header&gt;
-      &lt;section&gt;
+  <span class="p">&lt;</span><span class="nt">main</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;post-content&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ page.title }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;post-date&quot;</span><span class="p">&gt;</span>{{ page.date | date: &quot;%B %d, %Y&quot; }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
         {{ content }}
-      &lt;/section&gt;
-    &lt;/article&gt;
-    &lt;nav class=&quot;post-nav&quot;&gt;
-      &lt;a href=&quot;{{ &quot;/&quot; | relative_url }}&quot;&gt;&amp;#8592; Back to Home&lt;/a&gt;
-    &lt;/nav&gt;
-  &lt;/main&gt;
+      <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;post-nav&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ &quot;</span><span class="err">/&quot;</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}&quot;</span><span class="p">&gt;</span><span class="ni">&amp;#8592;</span> Back to Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
 
-  &lt;footer&gt;
-    &lt;p&gt;&amp;copy; {{ site.time | date: &quot;%Y&quot; }} {{ site.title }}. All rights reserved.&lt;/p&gt;
-  &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> {{ site.time | date: &quot;%Y&quot; }} {{ site.title }}. All rights reserved.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p><em>Explanation:</em></p>
@@ -409,19 +407,18 @@ This layout wraps individual blog posts. It expects that each Markdown post has 
 <section id="homepage">
 <h3>3. Homepage<a class="headerlink" href="#homepage" title="Link to this heading">¶</a></h3>
 <p>The homepage is defined by <strong><code class="docutils literal notranslate"><span class="pre">index.html</span></code></strong> in the root folder. This page uses the default layout and can include links to your blog posts.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>htmlCopyEdit&lt;!-- index.html --&gt;
----
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>---
 layout: default
 title: &quot;Home&quot;
 ---
 
-&lt;section class=&quot;intro&quot;&gt;
-  &lt;p&gt;Welcome to my Tufte CSS–styled website! Here you will find a collection of blog posts and articles rendered with a design inspired by Edward Tufte&#39;s style.&lt;/p&gt;
-&lt;/section&gt;
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;intro&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Welcome to my Tufte CSS–styled website! Here you will find a collection of blog posts and articles rendered with a design inspired by Edward Tufte&#39;s style.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
 
-&lt;section class=&quot;blog-links&quot;&gt;
-  &lt;h2&gt;Recent Blog Posts&lt;/h2&gt;
-  &lt;ul&gt;
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;blog-links&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Recent Blog Posts<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
     {% comment %}
     Here you can loop over your blog posts. Since our Markdown posts live in the &#39;blog&#39; folder,
     they are automatically processed by Jekyll. Ensure that each Markdown file includes the
@@ -429,14 +426,14 @@ title: &quot;Home&quot;
     {% endcomment %}
     {% for post in site.pages %}
       {% if post.path contains &#39;blog/&#39; %}
-        &lt;li&gt;
-          &lt;a href=&quot;{{ post.url | relative_url }}&quot;&gt;{{ post.title }}&lt;/a&gt;
-          &lt;small&gt;({{ post.date | date: &quot;%B %d, %Y&quot; }})&lt;/small&gt;
-        &lt;/li&gt;
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ post.url | relative_url }}&quot;</span><span class="p">&gt;</span>{{ post.title }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>({{ post.date | date: &quot;%B %d, %Y&quot; }})<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
       {% endif %}
     {% endfor %}
-  &lt;/ul&gt;
-&lt;/section&gt;
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p><em>Explanation:</em></p>
@@ -451,24 +448,24 @@ title: &quot;Home&quot;
 <section id="sample-markdown-blog-post">
 <h3>4. Sample Markdown Blog Post<a class="headerlink" href="#sample-markdown-blog-post" title="Link to this heading">¶</a></h3>
 <p>Create a sample blog post in the <strong><code class="docutils literal notranslate"><span class="pre">blog</span></code></strong> folder (for example, <strong><code class="docutils literal notranslate"><span class="pre">2025-01-31-sample-post.md</span></code></strong>). Make sure each Markdown file begins with YAML front matter.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>markdownCopyEdit&lt;!-- blog/2025-01-31-sample-post.md --&gt;
----
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">CopyEdit&lt;!-- blog/2025-01-31-sample-post.md --&gt;</span>
+<span class="gu">---</span>
 layout: post
 title: &quot;A Sample Tufte-Style Blog Post&quot;
-date: 2025-01-31
----
+<span class="gu">date: 2025-01-31</span>
+<span class="gu">---</span>
 
-This is a **sample** blog post written in Markdown.
+This is a <span class="gs">**sample**</span> blog post written in Markdown.
 
 Here are some features you can enjoy with Tufte CSS:
 
-- Elegant side notes
-- Responsive tables
-- Block quotes styled as in Tufte’s examples
+<span class="k">-</span><span class="w"> </span>Elegant side notes
+<span class="k">-</span><span class="w"> </span>Responsive tables
+<span class="k">-</span><span class="w"> </span>Block quotes styled as in Tufte’s examples
 
-&gt; This is a block quote example to showcase the design.
+<span class="k">&gt; </span><span class="ge">This is a block quote example to showcase the design.</span>
 
-## Subheading
+<span class="gu">## Subheading</span>
 
 More text goes here. You can also include code blocks:
 

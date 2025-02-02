@@ -91,8 +91,7 @@ Jekyll uses layout files (stored in the `_layouts` folder) to wrap your content.
 
 This is the default layout for all pages. It includes a link to the Tufte CSS file (hosted locally in the `css` folder).
 
-```
-htmlCopyEdit<!-- _layouts/default.html -->
+```html CopyEdit<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,8 +134,7 @@ htmlCopyEdit<!-- _layouts/default.html -->
 
 This layout is used for blog posts. It extends the default layout while adding elements specific to a post (like the post date).
 
-```
-htmlCopyEdit<!-- _layouts/post.html -->
+```html CopyEdit<!-- _layouts/post.html -->
 {% raw %}{% comment %}
 This layout wraps individual blog posts. It expects that each Markdown post has front matter with at least a title and a date.
 {% endcomment %}{% endraw %}
@@ -191,8 +189,7 @@ This layout wraps individual blog posts. It expects that each Markdown post has 
 
 The homepage is defined by **`index.html`** in the root folder. This page uses the default layout and can include links to your blog posts.
 
-```
-htmlCopyEdit<!-- index.html -->
+```html CopyEdit<!-- index.html -->
 ---
 layout: default
 title: "Home"
@@ -234,8 +231,8 @@ title: "Home"
 
 Create a sample blog post in the **`blog`** folder (for example, **`2025-01-31-sample-post.md`**). Make sure each Markdown file begins with YAML front matter.
 
-```
-markdownCopyEdit<!-- blog/2025-01-31-sample-post.md -->
+```markdown 
+CopyEdit<!-- blog/2025-01-31-sample-post.md -->
 ---
 layout: post
 title: "A Sample Tufte-Style Blog Post"
