@@ -24,6 +24,10 @@ jobs:
         run: |
           mkdir -p source/_static    
 
+      - name: Clean build directory
+        run: |
+          rm -rf build/*    
+
       - name: Build HTML
         run: |
           make html
