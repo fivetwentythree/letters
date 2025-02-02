@@ -21,7 +21,7 @@ extensions = [
 ]
 
 templates_path = []
-exclude_patterns = ['_static']
+exclude_patterns = []
 
 
 
