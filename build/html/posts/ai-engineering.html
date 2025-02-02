@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Black Swan Discussion" href="second-post.html" /><link rel="prev" title="Lochana’s Letters" href="../index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Organize, search, and customize in Bear" href="bear.html" /><link rel="prev" title="Lochana’s Letters" href="../index.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>My First Blog Post - Lochana&#39;s Letters</title>
+        <title>Brief overview : AI Engineering - Lochana&#39;s Letters</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -179,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -198,9 +198,10 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">Blog Posts:</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Posts:</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">My First Blog Post</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Brief overview : AI Engineering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bear.html">Organize, search, and customize in Bear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="second-post.html">Black Swan Discussion</a></li>
 </ul>
 
@@ -222,7 +223,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/posts/first-post.md.txt" title="View this page">
+  <a class="muted-link" href="../_sources/posts/ai-engineering.md.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -236,33 +237,76 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="my-first-blog-post">
-<h1>My First Blog Post<a class="headerlink" href="#my-first-blog-post" title="Link to this heading">¶</a></h1>
-<p><strong>Date</strong>: 2023-08-15<br />
-<strong>Author</strong>: Your Name</p>
-<p>Welcome to my new blog!</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
+          <section id="brief-overview-ai-engineering">
+<h1>Brief overview : AI Engineering<a class="headerlink" href="#brief-overview-ai-engineering" title="Link to this heading">¶</a></h1>
+<p><img alt="A real feast" src="../_images/image.jpeg" /></p>
+<section id="explainer">
+<h2>Explainer<a class="headerlink" href="#explainer" title="Link to this heading">¶</a></h2>
+<p>In context learning - model will learn new information from the prompts, for example if the python documentation is outside the knowledge cutoff the model will learn from the prompt which save these new prompts from getting outdated</p>
+<p>Each example provided is called a shot</p>
+<p>And using few examples to teach the model how to respond is called few shot prompting</p>
+<p>If no example was given then it becomes zero shot prompting
+Which seems to be the case for most of the latest models for most of the time</p>
+<p>The number of examples are limited by the models context length and this barrier has also surpassed by latest gemini models and the upcoming DL paradigm which is called Titan if it come to see the day (not sure google will opensource the  exact model data)</p>
+<p>If the system prompt and the user prompt was given the model will combine the two following a template</p>
 </section>
+<section id="defender">
+<h2>Defender<a class="headerlink" href="#defender" title="Link to this heading">¶</a></h2>
+<p>Why having a better system prompt is good - she mentions two possible reasons, one is the system prompt is being fed into the system first then so it will prime the model to answer the user prompt most effectively</p>
+<p>Second some of the models seems to be made to look for system prompts and pay more attention to the system prompt and closely follow the instructions given in the prompt</p>
+<p>Not all parts in a prompt are equal, model is much better at understanding the prompt at the begging and the end.</p>
+<p>There is test to check this which is called a needle in the haystack, - a piece of information is being fed into different parts of the prompt and ask the model to find it</p>
+<p>When prompting adhere to following best practices</p>
+<ul class="simple">
+<li><p>Write clearly<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
+<li><p>Ask the model to adopt a persona</p></li>
+<li><p>Provide examples</p></li>
+<li><p>Specify the output format - you can ask to avoid unnecessary preambles</p></li>
+<li><p>Provide sufficient context - which will save the model from hallucinating</p></li>
+<li><p>Break complex tasks into subtasks</p></li>
+<li><p>Give the model time to think - this is same as chain of though prompting and this seems to be less used in the industry because of the recent reasoning models, CoT thinking is more intuit into these newer models - this is also known as self critique techniques</p></li>
+</ul>
+<p>⠀
+Best thing is to have a separate prompts.py file</p>
+<p>You can use the pydantic BaseModel to ensure type safety</p>
+<p>This is how the neural networks are taught - or more specifically trained - this part is not the natural order I need to have in this particular document but this part is important</p>
+<p>The method used to train NN - backpropagation</p>
+<p>It has two parts - forward pass and backward pass</p>
+<p>During the forward pass - computing the output from the input</p>
+<p>Backward pass - updating the model weights according to the aggregated signal of the forward pass</p>
+<p>Oversimplified version of what’s happen during the backwardness is like this</p>
+<ol class="arabic simple">
+<li><p>The computed values of the forward pass is compared with the expected values which are knowns as ground truths - if these show significant variations then it is called LOSS - the main aim of an NN is to minimize this number</p></li>
+<li><p>How much this variation is caused by adjusting the parameters can be identified and calculated using the GRADIENT - this is the derivative of the loss respect to each trainable parameter</p></li>
+<li><p>Trainable parameters are adjusted accordingly , how much the parameter has to be adjusted is determined by an OPTIMIZER - like SGD and ADAM - transformers use Adam</p></li>
+</ol>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>this is the first reference</p>
+</aside>
+</aside>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="second-post.html">
+          <a class="next-page" href="bear.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Black Swan Discussion</div>
+                <div class="title">Organize, search, and customize in Bear</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -295,8 +339,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Brief overview : AI Engineering</a><ul>
+<li><a class="reference internal" href="#explainer">Explainer</a></li>
+<li><a class="reference internal" href="#defender">Defender</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
