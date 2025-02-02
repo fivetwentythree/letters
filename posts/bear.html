@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Organize, search, and customize in Bear" href="bear.html" /><link rel="prev" title="Lochana’s Letters" href="../index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Black Swan Discussion" href="second-post.html" /><link rel="prev" title="Brief overview : AI Engineering" href="ai-engineering.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>Brief overview : AI Engineering - Lochana&#39;s Letters</title>
+        <title>Organize, search, and customize in Bear - Lochana&#39;s Letters</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -200,8 +200,8 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Posts:</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Brief overview : AI Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bear.html">Organize, search, and customize in Bear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-engineering.html">Brief overview : AI Engineering</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Organize, search, and customize in Bear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="second-post.html">Black Swan Discussion</a></li>
 </ul>
 
@@ -223,7 +223,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/posts/ai-engineering.md.txt" title="View this page">
+  <a class="muted-link" href="../_sources/posts/bear.md.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -243,81 +243,92 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="brief-overview-ai-engineering">
-<h1>Brief overview : AI Engineering<a class="headerlink" href="#brief-overview-ai-engineering" title="Link to this heading">¶</a></h1>
-<p><img alt="A real feast" src="../_images/image.jpeg" /></p>
-<section id="explainer">
-<h2>Explainer<a class="headerlink" href="#explainer" title="Link to this heading">¶</a></h2>
-<p>In context learning - model will learn new information from the prompts, for example if the python documentation is outside the knowledge cutoff the model will learn from the prompt which save these new prompts from getting outdated</p>
-<p>Each example provided is called a shot</p>
-<p>And using few examples to teach the model how to respond is called few shot prompting</p>
-<p>If no example was given then it becomes zero shot prompting
-Which seems to be the case for most of the latest models for most of the time</p>
-<p>The number of examples are limited by the models context length and this barrier has also surpassed by latest gemini models and the upcoming DL paradigm which is called Titan if it come to see the day (not sure google will opensource the  exact model data)</p>
-<p>If the system prompt and the user prompt was given the model will combine the two following a template</p>
+          <section id="organize-search-and-customize-in-bear">
+<h1>Organize, search, and customize in Bear<a class="headerlink" href="#organize-search-and-customize-in-bear" title="Link to this heading">¶</a></h1>
+<p>Next on your [[Get started with Bear|Get started with Bear]] journey, let’s explore how to make our notes more useful with organization, search, and customizing Bear to fit our needs.</p>
+<hr class="docutils" />
+<section id="flexible-organization-with-tags">
+<h2>Flexible organization with tags<a class="headerlink" href="#flexible-organization-with-tags" title="Link to this heading">¶</a></h2>
+<p>Instead of rigid folders, Bear uses tags to organize notes. Just like social media, a tag is a simple pound sign and a word, like , and they can go anywhere in your notes. Bear’s Sidebar will collect your tags, and you can click a tag to instantly see all notes that contain it.</p>
+<p>One of the many benefits of tags is that a note can exist in multiple tags at once. For example, a note with a todo list for shopping and groceries could have the tags <strong>#errands</strong>, <strong>#groceries</strong>, and <strong>#shopping</strong>, then appear when you click any of those tags.</p>
+<section id="get-granular-with-multiple-words">
+<h3>👉 Get granular with multiple words<a class="headerlink" href="#get-granular-with-multiple-words" title="Link to this heading">¶</a></h3>
+<p>Bear supports multi-word tags like <strong>#welcome notes#</strong> and <strong>#my next novel#</strong> and <strong>#world domination#</strong>. They allow for more specific organization and are just plain easier to read. As you can see, to create a multi-word tag, simply wrap the first and final words in pound signs.</p>
 </section>
-<section id="defender">
-<h2>Defender<a class="headerlink" href="#defender" title="Link to this heading">¶</a></h2>
-<p>Why having a better system prompt is good - she mentions two possible reasons, one is the system prompt is being fed into the system first then so it will prime the model to answer the user prompt most effectively</p>
-<p>Second some of the models seems to be made to look for system prompts and pay more attention to the system prompt and closely follow the instructions given in the prompt</p>
-<p>Not all parts in a prompt are equal, model is much better at understanding the prompt at the begging and the end.</p>
-<p>There is test to check this which is called a needle in the haystack, - a piece of information is being fed into different parts of the prompt and ask the model to find it</p>
-<p>When prompting adhere to following best practices</p>
+<section id="add-depth-with-nested-tags">
+<h3>👉 Add depth with nested tags<a class="headerlink" href="#add-depth-with-nested-tags" title="Link to this heading">¶</a></h3>
+<p>Like folders, you can also create sub-tags which we call <strong>nested tags</strong>. These are great for organizing multiple projects under a main <em>work</em> or <em>school</em> tag, or multiple days under multiple months of your journaling notes.</p>
+<p>To nest one tag under another, use a forward slash between words, like: . In the Sidebar, a folding button appears next to the top-level tag which reveals its nested tags.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="find-that-needle-in-a-haystack">
+<h2>Find that needle in a haystack<a class="headerlink" href="#find-that-needle-in-a-haystack" title="Link to this heading">¶</a></h2>
+<p>Bear has fast, powerful search that can even find text in photos and PDFs (Bear Pro required). Simply click the magnifier at the top of the Note List (or use ⌘ + ⇧ + F) and start typing.</p>
+<p>But there’s so much more to search in Bear.</p>
+<section id="smart-search">
+<h3>👉 Smart Search<a class="headerlink" href="#smart-search" title="Link to this heading">¶</a></h3>
+<p>Like most search engines, Bear supports a variety of <strong>search operators</strong> to filter your results. For example, you can search for a specific phrase by, exclude keywords by adding a minus symbol (-) before them, and more. <a class="reference external" href="https://bear.app/faq/">Learn about Bear search operators</a>.</p>
+</section>
+<section id="special-search">
+<h3>👉 Special Search<a class="headerlink" href="#special-search" title="Link to this heading">¶</a></h3>
+<p>These are search triggers that look for specific <em>types</em> of data in your notes. For example, <strong>&#64;todo</strong> finds notes containing unfinished tasks, and <strong>&#64;images</strong> finds notes that have photos. <a class="reference external" href="https://bear.app/faq/">Learn about Special Search in Bear’s online documentation</a>.</p>
+</section>
+<section id="in-note-search">
+<h3>👉 In-note search<a class="headerlink" href="#in-note-search" title="Link to this heading">¶</a></h3>
+<p>Bear can search all text in a note, including text in photos and PDFs (Bear Pro required). While editing a note, use the three dots (⋮) menu and select Search, then start typing.</p>
+<p>Bear will highlight all results in the note. Use the arrows to navigate results, and click the magnifying glass for a <strong>Find &amp; Replace</strong> tool.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="bear-your-way">
+<h2>Bear Your Way<a class="headerlink" href="#bear-your-way" title="Link to this heading">¶</a></h2>
+<p>We do our best work in the right environment, and we recognize that space is different for everyone. Bear has some useful options to make it your own.</p>
+<section id="themes">
+<h3>👉 Themes<a class="headerlink" href="#themes" title="Link to this heading">¶</a></h3>
+<p>The right theme for your notes and writing can turn a slog of a project into a breeze. Check out Bear’s theme collection in settings, including even more options unlocked with Bear Pro.</p>
+</section>
+<section id="editor-formatting">
+<h3>👉 Editor formatting<a class="headerlink" href="#editor-formatting" title="Link to this heading">¶</a></h3>
+<p>Prefer to write double-spaced? Are your paragraphs too narrow or close together? Check out the <strong>Typography</strong> section in settings to dial in your typography just right, including choosing a different font.</p>
+</section>
+<section id="note-list-view-options">
+<h3>👉 Note List view options<a class="headerlink" href="#note-list-view-options" title="Link to this heading">¶</a></h3>
+<p>The Note List offers a useful preview of your notes—their contents, photos, and attachments. But if you don’t want attachments to be previewed, or you’d rather see smaller previews and more notes at once, click the Note List heading for options to control these and other features.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="learn-more-about-bear">
+<h2>Learn more about Bear 📚<a class="headerlink" href="#learn-more-about-bear" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Write clearly<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
-<li><p>Ask the model to adopt a persona</p></li>
-<li><p>Provide examples</p></li>
-<li><p>Specify the output format - you can ask to avoid unnecessary preambles</p></li>
-<li><p>Provide sufficient context - which will save the model from hallucinating</p></li>
-<li><p>Break complex tasks into subtasks</p></li>
-<li><p>Give the model time to think - this is same as chain of though prompting and this seems to be less used in the industry because of the recent reasoning models, CoT thinking is more intuit into these newer models - this is also known as self critique techniques</p></li>
+<li><p>[[Get started with Bear ]]</p></li>
+<li><p>[[Work faster and easier with Bear]]</p></li>
 </ul>
-<p>⠀
-Best thing is to have a separate prompts.py file</p>
-<p>You can use the pydantic BaseModel to ensure type safety</p>
-<p>This is how the neural networks are taught - or more specifically trained - this part is not the natural order I need to have in this particular document but this part is important</p>
-<p>The method used to train NN - backpropagation</p>
-<p>It has two parts - forward pass and backward pass</p>
-<p>During the forward pass - computing the output from the input</p>
-<p>Backward pass - updating the model weights according to the aggregated signal of the forward pass</p>
-<p>Oversimplified version of what’s happen during the backwardness is like this</p>
-<ol class="arabic simple">
-<li><p>The computed values of the forward pass is compared with the expected values which are knowns as ground truths - if these show significant variations then it is called LOSS - the main aim of an NN is to minimize this number</p></li>
-<li><p>How much this variation is caused by adjusting the parameters can be identified and calculated using the GRADIENT - this is the derivative of the loss respect to each trainable parameter</p></li>
-<li><p>Trainable parameters are adjusted accordingly , how much the parameter has to be adjusted is determined by an OPTIMIZER - like SGD and ADAM - transformers use Adam</p></li>
-</ol>
 </section>
 </section>
-<hr class="footnotes docutils" />
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id2" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>this is the first reference</p>
-</aside>
-</aside>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="bear.html">
+          <a class="next-page" href="second-post.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Organize, search, and customize in Bear</div>
+                <div class="title">Black Swan Discussion</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../index.html">
+          <a class="prev-page" href="ai-engineering.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">Brief overview : AI Engineering</div>
                 
               </div>
             </a>
@@ -351,9 +362,25 @@ Best thing is to have a separate prompts.py file</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Brief overview : AI Engineering</a><ul>
-<li><a class="reference internal" href="#explainer">Explainer</a></li>
-<li><a class="reference internal" href="#defender">Defender</a></li>
+<li><a class="reference internal" href="#">Organize, search, and customize in Bear</a><ul>
+<li><a class="reference internal" href="#flexible-organization-with-tags">Flexible organization with tags</a><ul>
+<li><a class="reference internal" href="#get-granular-with-multiple-words">👉 Get granular with multiple words</a></li>
+<li><a class="reference internal" href="#add-depth-with-nested-tags">👉 Add depth with nested tags</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#find-that-needle-in-a-haystack">Find that needle in a haystack</a><ul>
+<li><a class="reference internal" href="#smart-search">👉 Smart Search</a></li>
+<li><a class="reference internal" href="#special-search">👉 Special Search</a></li>
+<li><a class="reference internal" href="#in-note-search">👉 In-note search</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bear-your-way">Bear Your Way</a><ul>
+<li><a class="reference internal" href="#themes">👉 Themes</a></li>
+<li><a class="reference internal" href="#editor-formatting">👉 Editor formatting</a></li>
+<li><a class="reference internal" href="#note-list-view-options">👉 Note List view options</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#learn-more-about-bear">Learn more about Bear 📚</a></li>
 </ul>
 </li>
 </ul>
