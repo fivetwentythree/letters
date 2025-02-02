@@ -8,7 +8,7 @@ Lochana's Letters
 
 .. toctree::
    :maxdepth: 2
-   :caption: Blog Posts:
+   :caption: Posts:
    :glob:
 
    posts/*
