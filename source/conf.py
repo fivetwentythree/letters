@@ -34,7 +34,7 @@ html_theme_options = {
     "sidebar_hide_name": True,
     "top_of_page_button": "edit",
 }
-html_static_path = ['_static']
+#html_static_path = ['_static']
 
 # Add at end of file
 source_suffix = {
