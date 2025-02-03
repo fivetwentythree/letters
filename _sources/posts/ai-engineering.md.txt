@@ -1,6 +1,6 @@
 # Brief overview : AI Engineering
 
-![A real feast](images/image.jpeg){: .image-class loading="lazy"}
+![A real feast](images/image.jpeg)
 
 
 ## Explainer
