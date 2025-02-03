@@ -1,6 +1,6 @@
 # Brief overview : AI Engineering
 
-![A real feast](images/image.jpeg)
+![A real feast](images/image.jpeg)ç
 
 ## Explainer
 In context learning - model will learn new information from the prompts, for example if the python documentation is outside the knowledge cutoff the model will learn from the prompt which save these new prompts from getting outdated 
