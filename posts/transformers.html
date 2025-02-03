@@ -206,9 +206,6 @@
 <li class="toctree-l1"><a class="reference internal" href="second-post.html">Black Swan Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="test.html">This is a test</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Trasnfomers : A Brief</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#mathematical-properties">2. Mathematical Properties</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#positional-encoding">3. Positional Encoding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#computational-complexity">4. Computational Complexity</a></li>
 </ul>
 
 </div>
@@ -252,7 +249,7 @@
           <section id="trasnfomers-a-brief">
 <h1>Trasnfomers : A Brief<a class="headerlink" href="#trasnfomers-a-brief" title="Link to this heading">¶</a></h1>
 <section id="core-components-of-transformers">
-<h2>1. Core Components of Transformers<a class="headerlink" href="#core-components-of-transformers" title="Link to this heading">¶</a></h2>
+<h2>Core Components of Transformers<a class="headerlink" href="#core-components-of-transformers" title="Link to this heading">¶</a></h2>
 <section id="embedding-and-dimensionality">
 <h3>Embedding and Dimensionality<a class="headerlink" href="#embedding-and-dimensionality" title="Link to this heading">¶</a></h3>
 <p>The text discusses embedding dimensions using GPT-3 as an example:</p>
@@ -340,9 +337,8 @@
 </pre></div>
 </div>
 </section>
-</section>
 <section id="mathematical-properties">
-<h1>2. Mathematical Properties<a class="headerlink" href="#mathematical-properties" title="Link to this heading">¶</a></h1>
+<h2>Mathematical Properties<a class="headerlink" href="#mathematical-properties" title="Link to this heading">¶</a></h2>
 <p>The text discusses an interesting mathematical property regarding nearly orthogonal vectors in high-dimensional spaces. This relates to the capacity of the embedding space to encode different concepts.</p>
 <p>For n-dimensional vectors, the number of almost orthogonal vectors (with angles between 88° and 92°) grows exponentially with n. This can be approximately calculated using:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">estimate_almost_orthogonal_vectors</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">angle_tolerance</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
@@ -357,7 +353,7 @@
 </div>
 </section>
 <section id="positional-encoding">
-<h1>3. Positional Encoding<a class="headerlink" href="#positional-encoding" title="Link to this heading">¶</a></h1>
+<h2>Positional Encoding<a class="headerlink" href="#positional-encoding" title="Link to this heading">¶</a></h2>
 <p>The text mentions positional encoding as crucial for maintaining sequence information. Here’s the standard sinusoidal positional encoding implementation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">positional_encoding</span><span class="p">(</span><span class="n">max_seq_length</span><span class="p">,</span> <span class="n">d_model</span><span class="p">):</span>
     <span class="n">pe</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">max_seq_length</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
@@ -372,7 +368,7 @@
 </div>
 </section>
 <section id="computational-complexity">
-<h1>4. Computational Complexity<a class="headerlink" href="#computational-complexity" title="Link to this heading">¶</a></h1>
+<h2>Computational Complexity<a class="headerlink" href="#computational-complexity" title="Link to this heading">¶</a></h2>
 <p>The text discusses the quadratic complexity of attention with respect to sequence length. For a sequence of length n:</p>
 <ul class="simple">
 <li><p>Memory complexity: O(n²)</p></li>
@@ -387,6 +383,7 @@
 </ol>
 <p>This analysis covers the core technical components discussed in the text. The implementation details show how the theoretical concepts translate into practical code, while maintaining the parallelizable nature that makes Transformers so efficient on modern hardware like GPUs.</p>
 <p>Would you like me to elaborate on any particular aspect of this technical analysis?</p>
+</section>
 </section>
 
         </article>
@@ -437,17 +434,17 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Trasnfomers : A Brief</a><ul>
-<li><a class="reference internal" href="#core-components-of-transformers">1. Core Components of Transformers</a><ul>
+<li><a class="reference internal" href="#core-components-of-transformers">Core Components of Transformers</a><ul>
 <li><a class="reference internal" href="#embedding-and-dimensionality">Embedding and Dimensionality</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#attention-mechanism">Attention Mechanism</a></li>
 <li><a class="reference internal" href="#multi-head-attention">Multi-Head Attention</a></li>
+<li><a class="reference internal" href="#mathematical-properties">Mathematical Properties</a></li>
+<li><a class="reference internal" href="#positional-encoding">Positional Encoding</a></li>
+<li><a class="reference internal" href="#computational-complexity">Computational Complexity</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mathematical-properties">2. Mathematical Properties</a></li>
-<li><a class="reference internal" href="#positional-encoding">3. Positional Encoding</a></li>
-<li><a class="reference internal" href="#computational-complexity">4. Computational Complexity</a></li>
 </ul>
 
           </div>

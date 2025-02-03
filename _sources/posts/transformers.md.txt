@@ -1,7 +1,7 @@
 
 # Trasnfomers : A Brief
 
-## 1. Core Components of Transformers
+## Core Components of Transformers
 
 ### Embedding and Dimensionality
 
@@ -92,7 +92,7 @@ class MultiHeadAttention(nn.Module):
         return self.W_o(x)
 ```
 
-# 2. Mathematical Properties
+## Mathematical Properties
 
 The text discusses an interesting mathematical property regarding nearly orthogonal vectors in high-dimensional spaces. This relates to the capacity of the embedding space to encode different concepts.
 
@@ -109,7 +109,7 @@ def estimate_almost_orthogonal_vectors(n, angle_tolerance=2):
     return math.floor(2**((n/2) * (1 - math.log(1/math.sin(angle_rad)))))
 ```
 
-# 3. Positional Encoding
+## Positional Encoding
 
 The text mentions positional encoding as crucial for maintaining sequence information. Here's the standard sinusoidal positional encoding implementation:
 
@@ -125,7 +125,7 @@ def positional_encoding(max_seq_length, d_model):
     return pe
 ```
 
-# 4. Computational Complexity
+## Computational Complexity
 
 The text discusses the quadratic complexity of attention with respect to sequence length. For a sequence of length n:
 - Memory complexity: O(n²)
