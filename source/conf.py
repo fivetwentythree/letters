@@ -39,7 +39,7 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'furo'
-html_title = "Lochana's Letters"
+html_title = "Notes"
 html_theme_options = {
     "sidebar_hide_name": True,
     "top_of_page_button": "edit",
