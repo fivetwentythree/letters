@@ -180,7 +180,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -206,7 +206,6 @@
 <li class="toctree-l1"><a class="reference internal" href="second-post.html">Black Swan Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="test.html">This is a test</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Trasnfomers : A Brief</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#core-components-of-transformers">1. Core Components of Transformers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#mathematical-properties">2. Mathematical Properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#positional-encoding">3. Positional Encoding</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#computational-complexity">4. Computational Complexity</a></li>
@@ -244,7 +243,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -252,11 +251,10 @@
         <article role="main" id="furo-main-content">
           <section id="trasnfomers-a-brief">
 <h1>Trasnfomers : A Brief<a class="headerlink" href="#trasnfomers-a-brief" title="Link to this heading">¶</a></h1>
-</section>
 <section id="core-components-of-transformers">
-<h1>1. Core Components of Transformers<a class="headerlink" href="#core-components-of-transformers" title="Link to this heading">¶</a></h1>
+<h2>1. Core Components of Transformers<a class="headerlink" href="#core-components-of-transformers" title="Link to this heading">¶</a></h2>
 <section id="embedding-and-dimensionality">
-<h2>Embedding and Dimensionality<a class="headerlink" href="#embedding-and-dimensionality" title="Link to this heading">¶</a></h2>
+<h3>Embedding and Dimensionality<a class="headerlink" href="#embedding-and-dimensionality" title="Link to this heading">¶</a></h3>
 <p>The text discusses embedding dimensions using GPT-3 as an example:</p>
 <ul class="simple">
 <li><p>Embedding dimension: 12,288</p></li>
@@ -275,6 +273,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">embedding</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">embedding_dim</span><span class="p">)</span>
 </pre></div>
 </div>
+</section>
 </section>
 <section id="attention-mechanism">
 <h2>Attention Mechanism<a class="headerlink" href="#attention-mechanism" title="Link to this heading">¶</a></h2>
@@ -425,8 +424,35 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Trasnfomers : A Brief</a><ul>
+<li><a class="reference internal" href="#core-components-of-transformers">1. Core Components of Transformers</a><ul>
+<li><a class="reference internal" href="#embedding-and-dimensionality">Embedding and Dimensionality</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#attention-mechanism">Attention Mechanism</a></li>
+<li><a class="reference internal" href="#multi-head-attention">Multi-Head Attention</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mathematical-properties">2. Mathematical Properties</a></li>
+<li><a class="reference internal" href="#positional-encoding">3. Positional Encoding</a></li>
+<li><a class="reference internal" href="#computational-complexity">4. Computational Complexity</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

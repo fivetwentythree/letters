@@ -1,10 +1,9 @@
 
-
 # Trasnfomers : A Brief
 
-# 1. Core Components of Transformers
+## 1. Core Components of Transformers
 
-## Embedding and Dimensionality
+### Embedding and Dimensionality
 
 The text discusses embedding dimensions using GPT-3 as an example:
 - Embedding dimension: 12,288
