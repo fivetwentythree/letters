@@ -18,8 +18,17 @@ extensions = [
     'myst_parser',
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'sphinx_design'
 ]
+myst_enable_extensions = [
+    "html_image",
+    "html_admonition",
+    "colon_fence"
+]
+
+myst_allow_html = True
+
 
 templates_path = []
 exclude_patterns = []

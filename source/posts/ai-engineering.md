@@ -1,6 +1,6 @@
 # Brief overview : AI Engineering
 
-![A real feast](images/image.jpeg)
+
 
 
 ## Explainer
