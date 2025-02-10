@@ -1,10 +1,10 @@
-# Organize, search, and customize in Bear
+## Organize, search, and customize in Bear
 
 Next on your [[Get started with Bear|Get started with Bear]] journey, let’s explore how to make our notes more useful with organization, search, and customizing Bear to fit our needs.
 
 ---
 
-## Flexible organization with tags
+### Flexible organization with tags
 Instead of rigid folders, Bear uses tags to organize notes. Just like social media, a tag is a simple pound sign and a word, like , and they can go anywhere in your notes. Bear's Sidebar will collect your tags, and you can click a tag to instantly see all notes that contain it.
 
 One of the many benefits of tags is that a note can exist in multiple tags at once. For example, a note with a todo list for shopping and groceries could have the tags **\#errands**, **\#groceries**, and **\#shopping**, then appear when you click any of those tags.
@@ -19,7 +19,7 @@ To nest one tag under another, use a forward slash between words, like: . In the
 
 ---
 
-## Find that needle in a haystack
+### Find that needle in a haystack
 Bear has fast, powerful search that can even find text in photos and PDFs (Bear Pro required). Simply click the magnifier at the top of the Note List (or use ⌘ + ⇧ + F) and start typing.
 
 But there’s so much more to search in Bear.
@@ -37,20 +37,20 @@ Bear will highlight all results in the note. Use the arrows to navigate results,
 
 ---
 
-## Bear Your Way
+### Bear Your Way
 We do our best work in the right environment, and we recognize that space is different for everyone. Bear has some useful options to make it your own.
 
-### Themes
+#### Themes
 The right theme for your notes and writing can turn a slog of a project into a breeze. Check out Bear’s theme collection in settings, including even more options unlocked with Bear Pro. 
 
-### Editor formatting
+#### Editor formatting
 Prefer to write double-spaced? Are your paragraphs too narrow or close together? Check out the **Typography** section in settings to dial in your typography just right, including choosing a different font.
 
-### Note List view options
+#### Note List view options
 The Note List offers a useful preview of your notes—their contents, photos, and attachments. But if you don’t want attachments to be previewed, or you’d rather see smaller previews and more notes at once, click the Note List heading for options to control these and other features.
 
 ---
-## Learn more about Bear 
+### Learn more about Bear 
 * [[Get started with Bear ]]
 * [[Work faster and easier with Bear]]
 

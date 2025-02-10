@@ -1,9 +1,6 @@
-# Brief overview : AI Engineering
+## Brief overview : AI Engineering
 
-
-
-
-## Explainer
+### Explainer
 In context learning - model will learn new information from the prompts, for example if the python documentation is outside the knowledge cutoff the model will learn from the prompt which save these new prompts from getting outdated 
 
 Each example provided is called a shot
@@ -17,7 +14,7 @@ The number of examples are limited by the models context length and this barrier
 
 If the system prompt and the user prompt was given the model will combine the two following a template 
 
-## Defender
+### Defender
 
 Why having a better system prompt is good - she mentions two possible reasons, one is the system prompt is being fed into the system first then so it will prime the model to answer the user prompt most effectively 
 
