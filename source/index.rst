@@ -10,5 +10,6 @@ Notes
    :maxdepth: 1
    :caption: Posts:
    :glob:
+   
 
    posts/*

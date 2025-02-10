@@ -6,6 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+
 project = "Lochana's Letters"
 copyright = '2025, Lochana Perera'
 author = 'Lochana Perera'
@@ -31,6 +32,7 @@ myst_allow_html = True
 
 
 templates_path = []
+
 exclude_patterns = []
 
 
@@ -47,8 +49,10 @@ html_theme_options = {
 }
 html_static_path = ['_static']
 
+
 # Add at end of file
 source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
 }
+
